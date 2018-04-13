@@ -1,0 +1,26 @@
+{
+  "item1": {
+    "Hora": "7:00 - 8:30",
+    "Alumno": "Julio Larrea",
+    "Instructor": "Victor Pozo",
+    "Horas Disp Vuelo": 16,
+    "Horas Disp Instruct": 10,
+    "observacion": "Estudiante tiene un saldo a favor de $8.60"
+  },
+  "item2": {
+    "Hora": "12:00 - 13:30",
+    "Alumno": "Elizabeth Suarez",
+    "Instructor": "Victor Pozo",
+    "Horas Disp Vuelo": 9,
+    "Horas Disp Instruct": 6,
+    "observacion": "Estudiante tiene un saldo que cancelar de $4.60"
+  },
+  "item3": {
+    "Hora": "19:00 - 20:30",
+    "Alumno": "Miguel Viejó",
+    "Instructor": "Victor Pozo",
+    "Horas Disp Vuelo": 25,
+    "Horas Disp Instruct": 25,
+    "observacion": ""
+  }
+}

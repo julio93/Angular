@@ -1,0 +1,37 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<html>
+<head>
+
+</head>
+<body>
+
+<div class="container"><br>
+  <h2 style="text-align:center;">Reservaciones de Vuelo</h2><br>
+  <form class="form-inline">
+    <div class="form-group" style="margin-left: 11%;">
+      <label for="fReserva">Fecha de Reserva:</label>
+      <input type="date" name="fechaReserv" class="form-control" >
+    </div>
+    <div class="form-group" style="margin-left: 13%;">
+      <label for="aereonave">Seleccionar Aereonave:</label>
+      <select class="form-control">
+          <option value="volvo">Avioneta 1</option>
+          <option value="saab">Avioneta 2</option>
+          <option value="mercedes">Avioneta 3</option>
+          <option value="audi">Avioneta 4</option>
+      </select>
+    </div>
+  </form>
+</div><br>
+<app-tabla></app-tabla>
+<br>
+
+<div class="btn-group contenedor-botones" role="group" align=center>
+  <button class="btn btn-default boton-adaptado" type="button">Imprimir Orden De Vuelo&nbsp;<span class="glyphicon glyphicon-print"></span></button>
+  <button class="btn btn-default boton-adaptado" type="button">Generar Archivo Web&nbsp;<span class="glyphicon glyphicon-globe"></span></button>
+  <button class="btn btn-default boton-adaptado" type="button">Borrar Horarios&nbsp;<span class="glyphicon glyphicon-trash"></span></button>
+  <button class="btn btn-default boton-adaptado" type="button">Salir&nbsp;<span class="glyphicon glyphicon-menu-left"></span></button>
+</div>
+
+</body>
+</html> 
