@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TablaComponent } from './tabla/tabla.component';
 import { LlenarTablaService } from './llenar-tabla.service';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpModule} from '@angular/http';
 
 
 
@@ -16,7 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpModule
+
   ],
   providers: [LlenarTablaService],
   bootstrap: [AppComponent]

@@ -1,21 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { LlenarTablaService } from '../llenar-tabla.service';
+import {Http} from '@angular/http';
+import { Reserva } from '../reserva';
+import 'rxjs/Rx';
 
 
 @Component({
   selector: 'app-tabla',
+  providers:[LlenarTablaService],
   templateUrl: './tabla.component.html',
-  styleUrls: ['./tabla.component.css']
+  styleUrls: ['./tabla.component.css'],
 })
 export class TablaComponent implements OnInit {
 
-  public reservas = [];
+  reservaciones: Array<Reserva>;
+  private _url: string = '/assets/javascript/reservas.json';
 
-  constructor(private _llenarTabla: LlenarTablaService) { }
+  constructor(public _llenarTabla: LlenarTablaService) { 
+    _llenarTabla.getReservas();
+    //console.log(this.reservaciones);
+  }
+
 
   ngOnInit() {
-    this._llenarTabla.getReservas()
-    .subscribe(data => this.reservas = data);
+    
   }
+
 
 }
