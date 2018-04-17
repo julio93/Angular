@@ -6,18 +6,21 @@ import { AppComponent } from './app.component';
 import { TablaComponent } from './tabla/tabla.component';
 import { LlenarTablaService } from './llenar-tabla.service';
 import {HttpModule} from '@angular/http';
+import {AppRoutingModule, routingComponents} from './app-routing.module';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TablaComponent
+    TablaComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
-    HttpModule
-
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [LlenarTablaService],
   bootstrap: [AppComponent]

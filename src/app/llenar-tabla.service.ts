@@ -17,27 +17,6 @@ export class LlenarTablaService {
 
   reservaciones: Array<Reserva>;
 
-  // getReservas()
-  // {
-  //   return this.http.get(this._url).map( (responseData) => {
-  //     console.log("hola");
-  //     return responseData.json();
-  //   }).map((reservaciones: Array<any>) => {
-  //     console.log("hola x2");
-  //     let result:Array<Reserva> = [];
-  //     if (reservaciones) {
-  //       console.log("hola x3");
-  //     Array.from(reservaciones).forEach((reserva) => {
-  //       console.log("hola x4");
-  //       result.push(new Reserva(reserva.hora, reserva.alumno, reserva.instructor, 
-  //         reserva.horas_vuelo,reserva.horas_instruct,reserva.observacion));
-  //         console.log(this.reservaciones.length);
-  //     });
-  //   }
-  //   return result;
-  // });
-  // }
-
   getReservas(){
     this.http.get(this._url).subscribe((res:Response) => {
       this.reservaciones = res.json();

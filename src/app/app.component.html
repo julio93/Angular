@@ -12,7 +12,7 @@
       <label for="fReserva">Fecha de Reserva:</label>
       <input type="date" name="fechaReserv" class="form-control" >
     </div>
-    <div class="form-group" style="margin-left: 13%;">
+    <div class="form-group" style="margin-left: 20%;">
       <label for="aereonave">Seleccionar Aereonave:</label>
       <select class="form-control">
           <option value="volvo">Avioneta 1</option>
@@ -23,15 +23,13 @@
     </div>
   </form>
 </div><br>
-<app-tabla></app-tabla>
+<router-outlet></router-outlet>
 <br>
-
-<div class="btn-group contenedor-botones" role="group" align=center>
+<div class="btn-group contenedor-botones" role="group" align=center style="padding-right: 10%;">
   <button class="btn btn-default boton-adaptado" type="button">Imprimir Orden De Vuelo&nbsp;<span class="glyphicon glyphicon-print"></span></button>
   <button class="btn btn-default boton-adaptado" type="button">Generar Archivo Web&nbsp;<span class="glyphicon glyphicon-globe"></span></button>
   <button class="btn btn-default boton-adaptado" type="button">Borrar Horarios&nbsp;<span class="glyphicon glyphicon-trash"></span></button>
   <button class="btn btn-default boton-adaptado" type="button">Salir&nbsp;<span class="glyphicon glyphicon-menu-left"></span></button>
 </div>
-
 </body>
 </html> 
